@@ -22,7 +22,7 @@ class SuperSumTest(unittest.TestCase):
 
 	def test_list_of_strings(self):
 		self.assertequal(super_sum([["lol", "huh", "gee", "foo"]), 0)
-		self.assertequal(super_sum([[1, 2, 3], ["lol", "huh", "foo"]), 0)
+		with self.assertRaises(TypeError):([[1, 2, 3], ["lol", "huh", "foo"]), 0)
 
 if __name__== '__main__':
 	unittest.main()
