@@ -22,5 +22,5 @@ def super_sum(numbers_to_sum):
 	
 	return sum_counter		
 		
-print (super_sum([]))
 
+print(super_sum([1, 3, 7, 8, [56,43]]))

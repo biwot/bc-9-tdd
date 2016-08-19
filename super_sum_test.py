@@ -3,14 +3,20 @@ import unittest
 from super_sum import super_sum
 
 class SuperSumTest(unittest.TestCase):
+
+	def setUp(self):
+		self.numbers= [2, 4, 6, 8, 44, 66, 88, 98, 3, 9, 15, 27, 5, 7, 13, 17, 1, 22, 11, 19, -1, -5, -7, -9]
+		self.strings= ["lol", "huh", "gee", "foo"]
 	
 	def test_sum_of_even_numbers(self):		
 		self.assertEqual(super_sum([2, 4,6 ,8]), 20)
 		self.assertEqual(super_sum([44, 66,88, 98], 296)
 
+	
 	def test_sum_of_odd_numbers(self):
 		self.assertEqual(super_sum([3, 9, 15, 27], 54)
 		self.assertEqual(super_sum([5, 7, 13, 17], 42)
+
 
 	def test_list_of_mixed_elements(self):
 		self.assertequal(super_sum([[1, 2, 3], 4, 5, 6]), 21)
